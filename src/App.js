@@ -11,6 +11,7 @@ import OurGuides from './pages/HomePage/OurGuides/OurGuides';
 import AuthProvider from './contexts/AuthProvider';
 import Booking from './pages/Booking/Booking';
 import PrivateRoute from './pages/Shared/PrivateRoute/PrivateRoute';
+import AddService from './pages/AddService/AddService';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/addservice">
+              <AddService/>
             </Route>
             <PrivateRoute path="/booking">
               <Booking/>
