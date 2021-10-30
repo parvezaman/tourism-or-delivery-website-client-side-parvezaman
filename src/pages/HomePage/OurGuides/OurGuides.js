@@ -1,0 +1,12 @@
+import React from 'react';
+
+const OurGuides = () => {
+    return (
+        <div id="ourguides">
+            <h3>Our Guides</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quia, repudiandae, amet iste esse sit earum at optio error debitis cum nobis delectus excepturi. Deserunt repellendus odio blanditiis voluptatum aut sapiente nulla quibusdam similique. Quidem, tenetur voluptatem omnis cupiditate nemo voluptatibus neque esse rem enim quisquam recusandae totam sequi est eum. Fugiat nisi debitis, neque provident placeat voluptas. Dignissimos iure porro in earum architecto hic voluptatibus officia laborum doloribus quos velit quae vitae veritatis quibusdam explicabo inventore natus rem magni eius quis, itaque esse ipsam nulla. Quae quos tenetur nihil itaque soluta illum atque nulla dolore reprehenderit quia dolores rem, ducimus perspiciatis culpa asperiores unde facilis ipsa aliquam earum consequuntur voluptatum. Dolor esse iusto, tempora magnam, delectus aliquid excepturi optio ratione facere quo a atque quod architecto doloribus itaque minima laborum totam, id corrupti similique laboriosam illum recusandae numquam! Corporis reprehenderit nesciunt cum molestiae? Quod soluta officia perferendis ex eum. Voluptates, reprehenderit illo voluptas hic alias exercitationem eveniet molestiae qui sed nesciunt, magni fugiat, architecto incidunt nisi consequatur blanditiis deleniti. Natus ullam, incidunt sunt rerum saepe sint adipisci accusamus deleniti praesentium minima error culpa quidem iste, animi quam laborum, unde similique tempore? Eum, corporis laborum praesentium ad accusamus corrupti veritatis repudiandae omnis, expedita molestias quasi laudantium maxime maiores? Corporis maiores accusamus doloremque! Rerum quo laudantium ullam recusandae soluta repellendus fuga nostrum illum culpa. Saepe vitae corrupti cupiditate eligendi cum facilis, minima nihil labore et doloribus quaerat sed temporibus hic suscipit consequuntur fuga error. Quod est inventore deserunt id quaerat aliquam ipsa eveniet delectus reiciendis. Eos doloremque recusandae error officia, dolorem quos cupiditate nostrum itaque a, exercitationem quidem sed incidunt, deserunt odit voluptas ipsam asperiores sint tempora beatae? Natus autem, expedita aliquam, laudantium architecto nulla omnis libero enim mollitia odit ipsum adipisci asperiores magni dicta corporis eum sit! Non, vero facere?</p>
+        </div>
+    );
+};
+
+export default OurGuides;
