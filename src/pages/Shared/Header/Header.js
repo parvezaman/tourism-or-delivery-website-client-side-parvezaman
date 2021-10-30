@@ -15,10 +15,10 @@ const Header = () => {
                         <Nav.Link as={Link} to="/home#home">Home</Nav.Link>
                         <Nav.Link as={Link} to="/home#services">Services</Nav.Link>
                         <Nav.Link as={Link} to="/home#ourguides">Our Guides</Nav.Link>
+                        <Nav.Link as={Link} to="/booking">Bookings</Nav.Link>
                         {user?.email ?
                             <Button onClick={logOut}  variant="danger">Logout</Button> :
                             <Nav.Link as={Link} to="/login">Login</Nav.Link>}
-
                         <Navbar.Text className="ms-2">   
                            { user.email && `Signed in as:` }<a className="ms-2" href="#login">{user?.displayName}</a>
                         </Navbar.Text>

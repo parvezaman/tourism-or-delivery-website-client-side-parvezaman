@@ -9,6 +9,8 @@ import Header from './pages/Shared/Header/Header';
 import Services from './pages/HomePage/Services/Services';
 import OurGuides from './pages/HomePage/OurGuides/OurGuides';
 import AuthProvider from './contexts/AuthProvider';
+import Booking from './pages/Booking/Booking';
+import PrivateRoute from './pages/Shared/PrivateRoute/PrivateRoute';
 
 
 function App() {
@@ -31,6 +33,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
+            <PrivateRoute path="/booking">
+              <Booking/>
+            </PrivateRoute>
             <Route path="*">
               <NotFound />
             </Route>
