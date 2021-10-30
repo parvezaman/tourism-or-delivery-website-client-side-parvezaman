@@ -1,10 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Service from '../Service/Service';
 
 const Services = () => {
+    const [services, setServices] = useState([]);
+
+    console.log(services.length);
+    useEffect(() => {
+        fetch('http://localhost:5000/services')
+            .then(res => res.json())
+            .then(data => setServices(data))
+    }, [])
     return (
-        <div id="services">
-            <h3>this is services</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tempore perferendis ducimus maiores voluptatem itaque ipsa! Consectetur maiores perspiciatis dolore, ipsa pariatur quam sequi? Pariatur natus tempora quisquam modi ab. Inventore neque corrupti dolor, similique sint blanditiis enim ad porro, eveniet exercitationem, aliquam quibusdam repellat excepturi illo. Harum, nulla omnis repudiandae, fugiat illum quibusdam tempora unde at, nihil consequatur voluptatibus? Saepe eius consectetur natus dolores vero, explicabo incidunt suscipit soluta praesentium. Doloremque, quisquam consectetur quis, animi blanditiis nobis quas corporis quae ipsum distinctio rem officiis. Consectetur inventore vel voluptatibus quos, ex iste reprehenderit eaque. Tenetur ducimus quibusdam, sit voluptas amet quis, dolorum, laudantium numquam provident facere sequi mollitia. Blanditiis deleniti, libero at numquam eligendi reprehenderit dolore sequi vel quos doloribus assumenda laudantium est dignissimos iure cum placeat atque, qui quisquam eius, non debitis fugiat. Sunt beatae commodi, incidunt blanditiis assumenda quam possimus quasi veniam distinctio suscipit harum reprehenderit eius tenetur quia at. Reiciendis, quasi, rem dicta doloribus sequi maxime magni culpa neque ex ducimus et eum totam voluptas! Nisi itaque, animi debitis hic, esse sed sapiente nesciunt incidunt magni, aperiam quod architecto distinctio rerum quae iste voluptates porro eius non expedita necessitatibus facere ea. Optio nostrum, accusantium tempore excepturi id temporibus rerum eligendi corporis sapiente reiciendis illum quod sequi vel nam corrupti dolore consequuntur reprehenderit nemo consequatur. Modi, natus id animi amet earum voluptate voluptas quia totam voluptatem tempore dolor ullam, expedita iste? Sequi deleniti minima asperiores repellat? Aliquam facere, necessitatibus saepe, exercitationem cumque quae a minima impedit rerum ab est enim nisi fuga laudantium nostrum beatae dolor, fugiat consectetur nemo dolore eum quod assumenda omnis! Rem sapiente recusandae odio fuga soluta, aliquam quas totam voluptates repellat inventore asperiores aperiam reiciendis, harum est! Asperiores saepe laudantium eius enim eligendi, explicabo, optio deserunt quia nihil delectus illum quibusdam ratione? Tempora itaque ad numquam eius quaerat porro ipsa ex rem perferendis, incidunt cum praesentium consequuntur ea fugit unde beatae quam magni laboriosam reprehenderit doloribus id quas. Cupiditate ducimus harum nobis, eos aliquam expedita ab sint omnis porro libero velit. Consequatur dolorum quo voluptatum ratione, distinctio eum, totam sequi neque, dolor iure officiis quisquam dolorem. Officia ex quis reprehenderit tenetur minima cupiditate laudantium perferendis veniam, repudiandae, ab, fugit expedita quae placeat at facere numquam sapiente est quidem necessitatibus dolorum! Dolore nihil reprehenderit minus maxime facilis rerum excepturi aut illum beatae recusandae saepe, doloremque quaerat modi ut laudantium sequi laborum voluptas animi numquam, aspernatur et quo quis eius. Provident labore repellendus praesentium nobis quis dicta dolorem optio voluptas! Soluta repellat illo ratione aliquam nulla. Nostrum accusamus quas velit doloribus sequi earum, sit nihil tempore porro voluptate asperiores harum perspiciatis nulla alias molestiae tempora dignissimos sunt atque rem! Provident tempora repudiandae et sunt eum dignissimos nulla, alias doloremque est esse maxime eveniet distinctio. Facere illum ea libero totam maxime aliquam. Qui, commodi dolore! Et atque quisquam esse laborum nemo aliquam facilis ipsa, iusto accusantium eveniet similique blanditiis deleniti! Culpa fugiat nulla iusto. Veniam voluptas porro rem, esse eos, soluta beatae dolorem in commodi nobis ipsum.</p>
+        <div id="services" className="container">
+            <h3 className="text-center m-5">this is services</h3>
+            <div className="row">
+                {
+                    services.map(service => <Service
+                        key={service._id}
+                        service={service}
+                    />)
+                }
+            </div>
+
         </div>
     );
 };

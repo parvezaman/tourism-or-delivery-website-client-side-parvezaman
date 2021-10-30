@@ -34,6 +34,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
+            <Route path="/booking/:_id">
+              <Booking/>
+            </Route>
             <Route path="/addservice">
               <AddService/>
             </Route>
