@@ -4,7 +4,11 @@ import { useForm } from "react-hook-form";
 import './AddService.css';
 
 const AddService = () => {
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset } = useForm({
+        defaultValues:{
+            status: "pending"
+        }
+    });
     const onSubmit = data => {
         console.log(data);
     
