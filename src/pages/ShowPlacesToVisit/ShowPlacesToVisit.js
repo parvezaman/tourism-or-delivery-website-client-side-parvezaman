@@ -4,8 +4,8 @@ const ShowPlacesToVisit = (props) => {
     const { name, description, imageUrl } = props.place;
     return (
         <div className="col-md-12">
-            <div className="container">
-                <div className="text-center">
+            <div className="container mb-5 mt-5">
+                <div className="text-center mb-3">
                     <img className="img-fluid" src={imageUrl} alt="" />
                 </div>
                 <h2>{name}</h2>

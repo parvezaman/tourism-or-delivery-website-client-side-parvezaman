@@ -10,7 +10,7 @@ const OurGuides = () => {
     }, [])
     return (
         <div id="ourguides" className="container">
-            <h3 className="text-center m-5">Our Guides</h3>
+            <h1 className="text-center m-5 text-primary">Let's Meet with some of our Guides</h1>
             <div className="row g-5">
                 {
                     guides.map(guide => <ShowGuides
