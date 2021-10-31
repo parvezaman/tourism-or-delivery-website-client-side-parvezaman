@@ -15,6 +15,7 @@ import AddService from './pages/AddService/AddService';
 import Footer from './pages/Shared/Footer/Footer';
 import MyBookings from './pages/MyBookings/MyBookings';
 import AllBookings from './pages/AllBookings/AllBookings';
+import PlacesToVisit from './pages/HomePage/PlacesToVisit/PlacesToVisit';
 
 
 function App() {
@@ -27,11 +28,13 @@ function App() {
             <Route exact path="/">
               <Home />
               <Services />
+              <PlacesToVisit/>
               <OurGuides />
             </Route>
             <Route path="/home">
               <Home />
               <Services />
+              <PlacesToVisit/>
               <OurGuides />
             </Route>
             <Route path="/login">

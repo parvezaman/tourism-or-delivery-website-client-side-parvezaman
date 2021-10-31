@@ -55,7 +55,7 @@ const Booking = () => {
             <br />
             <h1>{name}</h1>
             <br /><br />
-            <img src={imageUrl} alt="" className="mt-5 mb-5" />
+            <img src={imageUrl} alt="" className="mt-5 mb-5 img-fluid" />
             <p className="mt-5 mb-5">{description}</p>
             <h3>Price: {price} BDT</h3>
             <h5 className="mt-5 mb-5 text-danger">Status: {status}</h5>
