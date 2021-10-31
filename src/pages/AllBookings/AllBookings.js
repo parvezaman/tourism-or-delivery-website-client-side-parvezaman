@@ -10,7 +10,7 @@ const AllBookings = () => {
     },[])
     return (
         <div>
-            <h3>All Bookings</h3>
+            <h3 className="text-center m-5">All Bookings ({bookings.length} bookings avaiable)</h3>
             {
                 bookings.map(booking => <ShowAllBookings
                 key={booking._id}
