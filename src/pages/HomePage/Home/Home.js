@@ -1,10 +1,46 @@
 import React from 'react';
+import { Carousel } from 'react-bootstrap';
 
 const Home = () => {
     return (
         <div>
-            <h3>this is home</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus et facere dolore ullam, alias maiores delectus laborum perferendis quam, nam dolores fugiat eveniet officiis ut reiciendis tenetur rerum voluptates a ea iste suscipit amet maxime. Laudantium ullam, nulla molestiae nisi cumque soluta iusto sunt obcaecati velit. Molestiae, qui. Ducimus natus eos dolorem, repellendus ut quasi, numquam beatae explicabo aut nobis nemo perspiciatis itaque quo, voluptatem dolore hic aliquid. Fugiat quae obcaecati ipsum iure cumque quod voluptas, eligendi animi excepturi laboriosam temporibus culpa distinctio consequatur magnam rerum reprehenderit eius quas aperiam praesentium accusamus saepe. Quaerat aliquam maiores animi sit, asperiores repellat cumque cum sapiente vel rem doloremque vero optio distinctio soluta! Tempora veritatis voluptatum odit, quos iste necessitatibus vel dolorem perspiciatis saepe consequuntur doloremque alias. Dolores nesciunt, reiciendis tempore vitae quidem quas voluptates ab nobis, qui temporibus odio exercitationem, illum incidunt eligendi! Odio consequuntur omnis sequi voluptates sapiente quod delectus quibusdam voluptatibus nostrum accusamus, inventore quis necessitatibus porro perspiciatis deleniti, et aliquam sunt! Ducimus natus amet saepe modi nesciunt, atque dolorem voluptate reiciendis praesentium inventore nulla provident dolorum, consectetur ea perspiciatis nam blanditiis qui non. Nemo, fugit! Optio omnis repudiandae earum magni enim culpa quis perferendis veniam beatae esse ipsum maiores harum porro minus libero, dolores illo? Perferendis, excepturi. Adipisci, velit consequatur explicabo ut tempore autem laudantium? Odit amet tenetur, distinctio error esse ratione assumenda fugiat omnis quasi eaque possimus veritatis illum ex, animi maxime. Maiores sint tempore id distinctio cum adipisci? Adipisci nesciunt iste ipsum qui ipsa facere eum deleniti labore ab, omnis cumque vero magni inventore assumenda expedita officiis obcaecati, laboriosam repellendus culpa neque. Tempora reiciendis quos fuga similique doloribus laborum temporibus culpa cupiditate voluptatem in beatae excepturi, consequatur molestias ducimus veritatis dolorum fugiat explicabo sint. Iusto similique omnis aut temporibus. Deserunt nemo iusto ab natus unde dolorum excepturi!</p>
+            <Carousel>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="https://everestholidays.com.bd/wp-content/uploads/2019/11/Paradise-Island-Resort.jpg"
+                        alt="First slide"
+                    />
+                    <Carousel.Caption>
+                        <h3>Luxurious hotels in the Beach</h3>
+                        <p>Maldives offesring Beautiful Luxurious hotels in the Ocean</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="https://besttoppers.com/wp-content/uploads/2021/01/long-beach-cloud-sunset.jpg"
+                        alt="Second slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Enjoy charming sunset</h3>
+                        <p>Enjoy the devine beauty of sun setting in the Ocean</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className="d-block w-100"
+                        src="https://stillbuddy.com/wp-content/uploads/2020/08/Top-10-Most-Beautiful-Hill-Stations-in-the-World.png"
+                        alt="Third slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Hills are calling</h3>
+                        <p>You can avail the opportunity to Hike with family</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </div>
     );
 };
