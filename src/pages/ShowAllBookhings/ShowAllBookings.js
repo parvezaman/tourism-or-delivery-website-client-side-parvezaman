@@ -1,7 +1,9 @@
 import React from 'react';
 
 const ShowAllBookings = (props) => {
-    const {name, packageName, email, status} = props.booking;
+    const {name, packageName, email, status, _id} = props.booking;
+
+    
     return (
         <div className="container d-flex justify-content-between bg-light mb-2 justify-content-center align-items-center rounded p-3 border border-secondary">
             <div>

@@ -8,6 +8,9 @@ const AllBookings = () => {
         .then(res => res.json())
         .then(data => setBookings(data))
     },[])
+
+    
+
     return (
         <div>
             <h3 className="text-center m-5">All Bookings ({bookings.length} bookings avaiable)</h3>
