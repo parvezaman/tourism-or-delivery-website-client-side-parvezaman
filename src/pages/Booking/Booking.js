@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { useForm } from "react-hook-form";
 import './Booking.css';
+import axios from 'axios';
 
 
 const Booking = () => {
@@ -33,15 +34,15 @@ const Booking = () => {
     const onSubmit = data => {
         console.log(data);
 
-        // axios.post('http://localhost:5000/services', data)
-        // .then(res => {
-        //     console.log(res);
+        axios.post('http://localhost:5000/bookings', data)
+        .then(res => {
+            console.log(res);
 
-        //     if(res.data.insertedId){
-        //         alert("Thank You!!! Service Added Successfully!");
-        //         reset();
-        //     }
-        // })
+            if(res.data.insertedId){
+                alert("Thank You!!! Your booking is now under processing!");
+                reset();
+            }
+        })
     };
 
     return (
@@ -61,6 +62,7 @@ const Booking = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <input {...register("packageName")} placeholder="Please enter the name of your desired package" required />
                     <input {...register("name")} placeholder="Tell us your Name Please" required />
+                    <input {...register("email")} placeholder="Tell us your email Please" required />
                     <textarea {...register("reasonOfChosing")} placeholder="What made you to choose this package. Your opinion will be used to improve our services" required />
                     <textarea {...register("address")} placeholder="Please share your address" required />
                     
