@@ -17,6 +17,6 @@ TravelTheWorld is a Tourism management site. A company has taken the responsibil
 
 ### live site link (firebase 2): https://travel-the-world-11a88.firebaseapp.com
 
-### Git Link (client side): 
+### Git Link (client side): https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-parvezaman
 
 ### Git Link (server side): https://github.com/programming-hero-web-course1/tourism-or-delivery-website-server-side-parvezaman
