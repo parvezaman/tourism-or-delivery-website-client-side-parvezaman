@@ -24,9 +24,7 @@ const Service = (props) => {
                     <Card.Text>
                         Price: {price} BDT
                     </Card.Text>
-                    <Card.Text>
-                        Status: {status}
-                    </Card.Text>
+                    
                     <Button onClick={()=> handleBookNow(_id)} variant="primary">Book Now</Button>
                 </Card.Body>
             </Card>

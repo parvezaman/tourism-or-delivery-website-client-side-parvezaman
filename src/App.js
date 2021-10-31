@@ -12,6 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import Booking from './pages/Booking/Booking';
 import PrivateRoute from './pages/Shared/PrivateRoute/PrivateRoute';
 import AddService from './pages/AddService/AddService';
+import Footer from './pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -34,9 +35,9 @@ function App() {
             <Route path="/login">
               <Login />
             </Route>
-            <Route path="/booking/:_id">
+            <PrivateRoute path="/booking/:_id">
               <Booking/>
-            </Route>
+            </PrivateRoute>
             <Route path="/addservice">
               <AddService/>
             </Route>
@@ -47,6 +48,7 @@ function App() {
               <NotFound />
             </Route>
           </Switch>
+          <Footer/>
         </BrowserRouter>
       </AuthProvider>
     </div>

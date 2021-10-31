@@ -1,0 +1,22 @@
+.footer{
+    background-color: black;
+    padding: 25px;
+    color: whitesmoke;
+}
+
+.links a{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.youtube{
+    color: #c4302b;
+}
+.facebook{
+    color: #3b5998;
+}
+.twitter{
+    color: #00acee ;
+}
+.linkedin{
+    color: #0077b5;
+}
