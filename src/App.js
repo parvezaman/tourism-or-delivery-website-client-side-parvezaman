@@ -13,6 +13,7 @@ import Booking from './pages/Booking/Booking';
 import PrivateRoute from './pages/Shared/PrivateRoute/PrivateRoute';
 import AddService from './pages/AddService/AddService';
 import Footer from './pages/Shared/Footer/Footer';
+import MyBookings from './pages/MyBookings/MyBookings';
 
 
 function App() {
@@ -43,6 +44,9 @@ function App() {
             </Route>
             <PrivateRoute path="/booking">
               <Booking/>
+            </PrivateRoute>
+            <PrivateRoute path="/mybookings">
+              <MyBookings/>
             </PrivateRoute>
             <Route path="*">
               <NotFound />
