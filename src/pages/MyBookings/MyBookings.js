@@ -11,7 +11,7 @@ const MyBookings = () => {
 
 
     useEffect(()=>{
-        fetch('http://localhost:5000/bookings')
+        fetch('https://eerie-treat-99297.herokuapp.com/bookings')
         .then(res => res.json())
         .then(data => setBookings(data));
     },[])

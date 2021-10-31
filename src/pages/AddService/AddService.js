@@ -12,7 +12,7 @@ const AddService = () => {
     const onSubmit = data => {
         console.log(data);
     
-        axios.post('http://localhost:5000/services', data)
+        axios.post('https://eerie-treat-99297.herokuapp.com//services', data)
         .then(res => {
             console.log(res);
 

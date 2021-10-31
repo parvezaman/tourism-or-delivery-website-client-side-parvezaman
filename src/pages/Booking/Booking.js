@@ -23,7 +23,7 @@ const Booking = () => {
     console.log(_id);
 
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://eerie-treat-99297.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setDetails(data))
     }, []);
@@ -38,7 +38,7 @@ const Booking = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/bookings', data)
+        axios.post('https://eerie-treat-99297.herokuapp.com/bookings', data)
         .then(res => {
             console.log(res);
 
