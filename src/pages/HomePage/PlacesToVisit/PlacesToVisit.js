@@ -9,7 +9,7 @@ const PlacesToVisit = () => {
         .then(data =>setPlaces(data))
     },[])
     return (
-        <div>
+        <div id="places-to-visit">
             <h1 className="m-5 text-center text-primary">Places You Should Visit</h1>
             <div className="row">
                 {

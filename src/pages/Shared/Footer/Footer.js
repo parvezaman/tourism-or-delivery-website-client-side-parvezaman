@@ -1,5 +1,4 @@
 import React from 'react';
-import { DiAndroid } from "react-icons/di";
 import { FaYoutube, FaFacebookF, FaTwitter, FaLinkedin } from "react-icons/fa";
 import './Footer.css';
 

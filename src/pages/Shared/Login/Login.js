@@ -19,7 +19,7 @@ const Login = () => {
 
 
     return (
-        <div className="text-center mt-5">
+        <div className="text-center mt-5 mb-5">
             <h3>Lets login</h3>
             <br /><br />
             <button onClick={handleGoogleLogin} className="btn btn-warning">Log in with Google</button>
