@@ -6,7 +6,11 @@ import axios from 'axios';
 
 
 const Booking = () => {
-    const { register, handleSubmit, reset } = useForm();
+    const { register, handleSubmit, reset } = useForm({
+        defaultValues: {
+            status: "Pending"
+          }
+    });
 
     const [details, setDetails] = useState([]);
     const [specificDetail, setSpecificDetail] = useState({});

@@ -25,7 +25,7 @@ const MyBookings = () => {
     console.log(specificDetails);
     return (
         <div>
-            <h1 className="text-center">Showing all bookings of <span className="text-danger">{user.email}</span></h1>
+            <h1 className="text-center">Showing all bookings of <span className="text-danger">{user.displayName}</span></h1>
             <br /><br /><br />
             {
                 specificDetails.map(booking=> <ShowBookingDetails
