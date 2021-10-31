@@ -14,6 +14,7 @@ import PrivateRoute from './pages/Shared/PrivateRoute/PrivateRoute';
 import AddService from './pages/AddService/AddService';
 import Footer from './pages/Shared/Footer/Footer';
 import MyBookings from './pages/MyBookings/MyBookings';
+import AllBookings from './pages/AllBookings/AllBookings';
 
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
             </PrivateRoute>
             <Route path="/addservice">
               <AddService/>
+            </Route>
+            <Route path="/allbookings">
+              <AllBookings/>
             </Route>
             <PrivateRoute path="/booking">
               <Booking/>
